@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="main">
+
+        <div class="header">
+            <div w3-include-html="google.com"></div>
+            <h1>Intranet <small>is love, is life</small></h1>
+            <nav>
+                <a href="#">Protokolle</a>
+                <a href="#">Adressbuch</a>
+                <a href="/finance">Finanzen</a>
+                <a href="#">Getränke</a>
+                <div class="user-icon"></div>
+            </nav>
+        </div>
+        <div class="info">
+            <p>Oh hi Peter!</p>
+        </div>
+        <div class="container">
+            <div class="box protokolle">
+                <a href="/protocols" class="box-link">
+                    <h2>Protokolle</h2>
+                    <p>Noch nicht bereit: 1.<br>Bereit zum Abstimmen: 2.</p>
+                </a>
+            </div>
+            <div class="box rechnungen">
+                <a href="/invoice" class="box-link">
+                    <h2>0,00 €</h2>
+                    <p>Offene Rechnungen</p>
+                </a>
+            </div>
+            <div class="box finanzen">
+                <a href="/finance" class="box-link">
+                    <h2>Finanzanträge</h2>
+                    <p>Offen: 1.</p>
+                </a>
+            </div>
+            <div class="box adressbuch">
+                <a href="/adressbook" class="box-link">
+                    <h2>Adressbuch</h2>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

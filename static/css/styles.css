@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    padding: 0 20vw;
+}
+
+.header {
+    background-color: #006666;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header small {
+    font-size: 16px;
+    color: #ccc;
+}
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #004c4c;
+    border-radius: 50%;
+}
+.info {
+    background-color: #66cccc;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.box-link {
+    text-decoration: none;
+    color: white;
+}
+.protokolle {
+    background-color: #ff704d;
+}
+.rechnungen {
+    background-color: #a67c52;
+}
+.finanzen {
+    background-color: #ffd700;
+}
+.adressbuch {
+    background-color: #66cc66;
+}
+.content {
+    padding: 20px;
+}
+.finance-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.finance-options button {
+    background-color: #004c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.finance-section {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #004c4c;
+    color: white;
+}
