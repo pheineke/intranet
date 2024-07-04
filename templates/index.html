@@ -10,6 +10,7 @@
     <div class="main">
 
         <div class="header">
+            <div w3-include-html="google.com"></div>
             <h1>Intranet <small>is love, is life</small></h1>
             <nav>
                 <a href="#">Protokolle</a>
@@ -19,29 +20,12 @@
                 <div class="user-icon"></div>
             </nav>
         </div>
-        <div class="info">
-            <p>Oh hi Peter!</p>
-        </div>
         <div class="container">
-            <div class="box protokolle">
-                <h2>Protokolle</h2>
-                <p>Noch nicht bereit: 1.<br>Bereit zum Abstimmen: 2.</p>
-            </div>
-            <div class="box rechnungen">
-                <h2>0,00 €</h2>
-                <p>Offene Rechnungen</p>
-            </div>
-            <div class="box finanzen">
-                <a href="/finance" class="box-link">
-                    <h2>Finanzanträge</h2>
-                    <p>Offen: 1.</p>
-                </a>
-            </div>
-            <div class="box adressbuch">
-                <a href="/adressbook" class="box-link">
-                    <h2>Adressbuch</h2>
-                </a>
-            </div>
+            <form method="post" action="/login">
+                <input class="inputfield" type="text" name="username" placeholder="Username"><br>
+                <input class="inputfield" type="password" name="password" placeholder="Password"><br>
+                <input class="button1" type="submit" value="Login">
+            </form>
         </div>
 
     </div>
