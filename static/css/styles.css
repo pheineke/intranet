@@ -1,3 +1,4 @@
+/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     background-color: #008080;
@@ -18,30 +19,36 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .header h1 {
     margin: 0;
     font-size: 24px;
 }
+
 .header small {
     font-size: 16px;
     color: #ccc;
 }
+
 nav a {
     color: white;
     margin-right: 20px;
     text-decoration: none;
 }
+
 .user-icon {
     width: 30px;
     height: 30px;
     background-color: #004c4c;
     border-radius: 50%;
 }
+
 .info {
     background-color: #66cccc;
     padding: 20px;
     text-align: center;
 }
+
 .container {
     background-color: #00a3a3;
     display: grid;
@@ -49,11 +56,13 @@ nav a {
     gap: 20px;
     padding: 20px;
 }
+
 .box {
     padding: 20px;
     border-radius: 10px;
     color: white;
 }
+
 .box-link {
     text-decoration: none;
     color: white;
@@ -103,4 +112,48 @@ th, td {
 th {
     background-color: #004c4c;
     color: white;
+}
+
+.register-box {
+    grid-column: span 2; /* Makes the register box span across both columns */
+}
+
+input[type="text"], input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Allgemeine Button-Stile */
+.button1 {
+    background-color: #004c4c; /* Farbe des Buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none; /* Für Links, die wie Buttons aussehen */
+}
+
+.button1:hover {
+    background-color: #003333; /* Farbe beim Hover-Effekt */
+}
+
+/* Container-Stile für das Formular */
+.container {
+    background-color: #00a3a3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Abstände zwischen Formular-Elementen */
+.container form {
+    margin-top: 20px;
 }
