@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
     <div class="main">
 
-        <div class="header">
-            <div w3-include-html="google.com"></div>
-            <h1>Intranet <small>is love, is life</small></h1>
-            <nav>
-                <a href="#">Protokolle</a>
-                <a href="#">Adressbuch</a>
-                <a href="/finance">Finanzen</a>
-                <a href="#">Getränke</a>
-                <div class="user-icon"></div>
-            </nav>
-        </div>
+        
         <div class="info">
             <p>Oh hi Peter!</p>
         </div>

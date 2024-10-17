@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block navheader %}
+    {{ super() }}
+    <a href="#">Protokolle</a>
+    <a href="#">Adressbuch</a>
+    <a href="/finance">Finanzen</a>
+    <a href="#">Getränke</a>
+    <a href="#">
+        <div class="dropdown">
+            <!-- User Icon -->
+            <div class="user-icon" onclick="toggleUserDropdown()"></div>
+            
+            <!-- Dropdown content -->
+            <div class="dropdown-content" id="userDropdown">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </a>
+    
+{% endblock %}
+{% block content %}
+
+<div class="info">
+    <p>{{ greeting }}</p>
+</div>
+<div class="container">
+    <a href="/protokolle" class="box-link" id="protokolle" style="text-decoration: none;">
+        <div>
+            <h2>Protokolle</h2>
+            <p>{{ protokolle_notready }}<br>{{ protokolle_ready }}</p>
+        </div>
+    </a>
+    
+    <a href="/rechnungen" class="box-link" id="rechnungen" style="text-decoration: none;">
+        <div>
+            <h2>{{ rechnungen }}</h2>
+            <p>Offene Rechnungen</p>
+        </div>
+    </a>
+    
+    <a href="/finanzen" class="box-link" id="finanzen" style="text-decoration: none;">
+        <div>
+            <h2>Finanzanträge</h2>
+            <p>{{ finanzanträge }}</p>
+        </div>
+    </a>
+    
+    <a href="/adressbuch" class="box-link" id="adressbuch" style="text-decoration: none;">
+        <div>
+            <h2>Adressbuch</h2>
+        </div>
+    </a>
+    
+</div>
+{% endblock %} 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user_icon.css') }}">
+    
+    <script src="{{ url_for('static', filename='js/user_icon.js') }}"></script>
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Intranet <small>is love, is life</small></h1>
+        <nav>
+            {% block navheader %}
+            {% endblock %}
+        </nav>
+        
+    </header>
+    
+    <main class="main">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2020 Flask App</p>
+    </footer>
+</body>
